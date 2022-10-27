@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-text-:'Roboto', sans-serif;
+  --font-weight-head: 700;
+  --font-weight-text: 400;
+  --fs-head:4.8rem;
+  --fs-nav:2.4rem;
+  --fs-text:1.8rem;
+  --fs-btn:1.29rem;
+
+  --font-color:#E1E1E6;
+}
+
+body {   
+  width:100%;
+  height: 100vh;
+  color: var(--font-color);
+
+}
+
+body{
+  background: url('../assets/mountains-universe-1.png') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+ 
+body.universe{ 
+  background: url('../assets/mountains-universe02.png') ; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.explore{
+  background: url('../assets/mountains-universe-3.png') ; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+body h1{
+  font-size: var(--fs-head);
+  font-family: var(--ff-text-);
+  font-weight: var(--font-weight-head);
+  line-height: 125%;
+}
+
+body p{
+  margin-top: 1.6rem;
+
+  line-height: 160%;
+  font-family: var(--ff-text-);
+  font-size: var(--fs-text);
+}
+
+header{
+  width:100%;
+  font-size: var(--fs-nav);
+  padding: 4rem 0 4rem 7.2rem ;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+header ul{
+  display: flex;
+  
+}
+header li{
+  list-style: none;
+  transition:  .3s ease;
+}
+
+header li:hover{
+  transition:  .3s ease;
+  transform: scale(1.05);
+
+}
+
+li + li{
+  margin-left: 3.2rem;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: var(--ff-text-);
+  font-weight: 400;
+}
+
+header a:hover,
+header a.active{
+  font-weight: 700;
+}
+
+main .main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: 80rem;
+  height: 40rem;
+
+  margin:17.2rem auto 0;
+}
+
+main .main-content button{
+ 
+  display: flex;
+  flex-direction: row; 
+  padding: 1.2rem 3.2rem;
+ 
+  width: 19.5rem;
+  color: white;
+  font-family: roboto;
+  font-weight: 700;
+
+  background-color: transparent; 
+
+  border: 2px solid #FFFFFF;
+  border-radius: .5rem;
+
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+main .main-content button:hover{
+  color: #02799D;
+  background: #FFFFFF;
+  transition: .3s ease;
+  transform: scale(1.05);
+}
+
+main .content-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 6.3rem 0 1.6rem 10.2rem;
+  width: 53rem;
+}
+
